@@ -1,4 +1,4 @@
-# Scoutless
+# 🔍 Scoutless
 
 Scoutless is a LAN host and service discovery tool written in C.
 
@@ -10,7 +10,7 @@ It is designed for fast, bounded, real-world local-network discovery with:
 
 This README is used as the public landing page for the dedicated Scoutless GitHub export.
 
-## What it does
+## ⚙️  What it does
 
 Scoutless focuses on:
 - IPv4 local network host discovery
@@ -26,7 +26,7 @@ It does not implement:
 
 All behavior described here is directly aligned with the current source code.
 
-## Core design
+## 🏗️ Core design
 
 - no threads
 - no blocking operations in the scan path
@@ -37,7 +37,7 @@ All behavior described here is directly aligned with the current source code.
 - single-socket UDP scanning with recvfrom drain
 - minimal memory footprint and predictable behavior
 
-## Discovery pipeline
+## 🔄 Discovery pipeline
 
 Scoutless runs a multi-phase pipeline:
 
@@ -58,7 +58,7 @@ In practice, probe ordering has measurable impact.
 
 On some Android devices, running UDP before TCP significantly improves results on unstable Wi-Fi networks.
 
-## Runtime characteristics
+## 📊 Runtime characteristics
 
 The implementation is strictly bounded:
 
@@ -74,7 +74,7 @@ Typical performance:
 
 Actual timing depends on network behavior and device responsiveness.
 
-## Output format
+## 📤 Output format
 
 Scoutless prints services as pseudo-URLs:
 
@@ -87,7 +87,7 @@ udp://192.168.1.40:161/svc/snmp
 
 When web probing detects additional context, hints such as `?host=` or `?sni=` are included.
 
-## Non-obvious behavior
+## ⚠️  Non-obvious behavior
 
 Any ICMP reply is treated as valid.
 
@@ -97,7 +97,7 @@ This is a deliberate trade-off:
 - increases robustness on inconsistent consumer networks
 - tolerates non-standard or partial implementations
 
-## Build
+## 🛠️ Build
 
 In the dedicated Scoutless GitHub export, build with:
 
@@ -105,13 +105,13 @@ In the dedicated Scoutless GitHub export, build with:
 make
 ```
 
-## Documentation
+## 📚 Documentation
 
 Full technical documentation:
 
 - `SCOUTLESS.md`
 
-## Context
+## 🌐 Context
 
 Scoutless is used as the discovery layer in Cloudless.
 
