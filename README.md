@@ -107,9 +107,7 @@ make
 
 ## 📚 Documentation
 
-Full technical documentation:
-
-👉 https://github.com/Cloudless-Site/scoutless/blob/main/SCOUTLESS.md
+👉 [Full Scoutless technical documentation](https://github.com/Cloudless-Site/scoutless/blob/main/SCOUTLESS.md)
 
 ## 🌐 Context
 
