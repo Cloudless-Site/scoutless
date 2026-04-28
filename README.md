@@ -109,7 +109,7 @@ make
 
 Full technical documentation:
 
-- `SCOUTLESS.md`
+👉 https://github.com/Cloudless-Site/scoutless/blob/main/SCOUTLESS.md
 
 ## 🌐 Context
 
